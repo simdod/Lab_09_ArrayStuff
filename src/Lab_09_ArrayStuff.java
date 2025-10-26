@@ -54,7 +54,8 @@ public class Lab_09_ArrayStuff
         // Task 6: Count occurrences of user value in array
 
         int count = 0;
-        for (int val : dataPoints) {
+        for (int val : dataPoints)
+        {
             if (val == userValue) {
                 count++;
             }
@@ -66,7 +67,8 @@ public class Lab_09_ArrayStuff
 
         int searchVal = SafeInput.getRangedInt(in, "Enter another value to search for (1-100)", 1, 100);
         boolean found = false;
-        for (int i = 0; i < dataPoints.length; i++) {
+        for (int i = 0; i < dataPoints.length; i++)
+        {
             if (dataPoints[i] == searchVal)
             {
                 System.out.printf("The value %d was found first at index %d.%n%n", searchVal, i);
@@ -84,7 +86,8 @@ public class Lab_09_ArrayStuff
 
         int min = dataPoints[0];
         int max = dataPoints[0];
-        for (int val : dataPoints) {
+        for (int val : dataPoints)
+        {
             if (val < min) min = val;
             if (val > max) max = val;
         }
@@ -102,9 +105,11 @@ public class Lab_09_ArrayStuff
 
     // Task 9 Static Method: Calculate and return average
 
-    public static double getAverage(int[] values) {
+    public static double getAverage(int[] values)
+    {
         int sum = 0;
-        for (int val : values) {
+        for (int val : values)
+        {
             sum += val;
         }
         return (double) sum / values.length;
